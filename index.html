@@ -1,53 +1,106 @@
 <!doctype html>
 	<html>
 	<head>
-	  <!-- ... -->
 	  <meta charset="UTF-8" />
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	  <link href="styles.css" rel="stylesheet">
 	</head>
 	<body>
-        <header>
-            <div class="bg-red-100 flex justify-between">
-                <div class="flex bg-yellow-100">
-                    <div><a href="" class="">BUTTON</a></div>
+        <nav class="">
+            <div class="hidden lg:flex justify-between m-5">
+                <div class="flex">
+                    <div><a href="" class="">LOGO</a></div>
                 </div>
-                <div>
-                    <div><a href="">BUTTON BUTTON BUTTON</a></div>
+                <div class="flex">
+                    <div><a href="" class="m-2 hover:bg-slate-200 py-2 px-4 rounded-md">Categories</a></div>
+                    <div><a href="" class="m-2 hover:bg-slate-200 py-2 px-4 rounded-md">Companies</a></div>
+                    <div><a href="" class="m-2 hover:bg-slate-200 py-2 px-4 rounded-md">Latest Jobs</a></div>
+                    <div><a href="" class="m-2 hover:bg-slate-200 py-2 px-4 rounded-md">Post a Job</a></div>
                 </div>
-                <div class="flex bg-blue-100">
-                    <div><a href="" class="">BUTTON</a></div>
-                    <div><a href="" class="">BUTTON</a></div>
-                    <div><a href="" class="">BUTTON</a></div>
+                <div class="flex">
+                    <div><a href="" class="bg-blue-100 m-2 py-2 px-4 hover:bg-slate-200 rounded-md">Sign Up</a></div>
+                    <div><a href="" class="m-2 hover:bg-slate-200 py-2 px-4 rounded-md">Log In</a></div>
                 </div>
-            </div>
-        </header>
-        <nav>
-            <div>
-                <ul class="flex justify-center bg-green-100">
-                    <div><li><a href="" class=""></a>BLAH</li></div>
-                    <div><li><a href="" class=""></a>BLAH</li></div>
-                    <div><li><a href="" class=""></a>BLAH</li></div>
-                    <div><li><a href="" class=""></a>BLAH</li></div>
-                    <div><li><a href="" class=""></a>BLAH</li></div>
-                </ul>
             </div>
         </nav>
         <main class="">
-            <section class="md:flex m-10">
-                <div class="bg-white m-4 w-2/5">
+            <section class="md:flex m-10 items-center"> <!--Hero Section-->
+                <div class="bg-white m-4">
                     <div class="text-3xl">Get connected with a paid and valuable experience.</div>
                     <p class="my-6"> A platform that connects high school students with job and internship opportunities.</p>
+                    <div class="flex flex-inline">
+                        <input type="text" name="search" id="search" class="border-2 rounded mr-2"/>
+                        <a href="" class="bg-slate-200 py-2 px-4 rounded-md">Discover</a>
+                    </div>
                 </div>
-                <div class="w-3/5 m-4"><img src="landing.jpg" class=""></div>
+                <div class="m-4"><img src="landing.jpg" class="rounded-lg"></div>
             </section>
-            <section class="md:flex bg-yellow-100 justify-between m-10">
-                <div class="bg-red-100 h-36 m-6 p-3">Look for an paid job</div>
-                <div class="bg-red-100 h-36 m-6 p-3">Look for an internship</div>
-                <div class="bg-red-100 h-36 m-6 p-3">Look for an internship</div>
+            <section class="md:flex flex-wrap justify-center m-10"> <!--Looking for... Section-->
+                <div class="bg-blue-100 h-36 m-4 p-3 rounded-lg text-2xl text-center align-middle">Look for an paid job</div>
+                <div class="bg-red-100 h-36 m-4 p-3 rounded-lg text-2xl text-center align-middle">Look for an internship</div>
+                <div class="bg-green-100 h-36 m-4 p-3 rounded-lg text-2xl text-center align-middle">Look for volunteer work</div>
+            </section>
+            <section> <!--Testimonial Section-->
+                <div>
+                    <div class="flex justify-center items-center"> <!--Testimonial Banner-->
+                        <div class="m-20">
+                            <h2 class="text-2xl">What students are saying</h2>
+                            <p>Here from real students who have used the app</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap justify-center"> <!--Testimonial Entries-->
+                        <div class="border-2 m-4 p-3 rounded-lg w-96">
+                            <div class="flex justify-center m-4">
+                                <div>
+                                    <img src="studentimage.jpg" class="w-16 rounded-full"/>
+                                </div>
+                                <div class="m-2">
+                                    <h3>Student Name</h3>
+                                    <img src="fivestars.png" class="w-24">
+                                </div>
+                            </div>
+                            <div class="m-4">I used to have to look around at so many different websites around
+                                stores just to figure out where to get a job. I tried using other websites but they
+                                just weren't made for high schoolers like me. I love this app and I recommend
+                                it to all my friends. 
+                            </div>
+                        </div>
+                        <div class="border-2 m-4 p-3 rounded-lg w-96">
+                            <div class="flex justify-center m-4">
+                                <div>
+                                    <img src="studentimage.jpg" class="w-16 rounded-full"/>
+                                </div>
+                                <div class="m-2">
+                                    <h3>Student Name</h3>
+                                    <img src="fivestars.png" class="w-24">
+                                </div>
+                            </div>
+                            <div class="m-4">I used to have to look around at so many different websites around
+                                stores just to figure out where to get a job. I tried using other websites but they
+                                just weren't made for high schoolers like me. I love this app and I recommend
+                                it to all my friends. 
+                            </div>
+                        </div>
+                        <div class="border-2 m-4 p-3 rounded-lg w-96">
+                            <div class="flex justify-center m-4">
+                                <div>
+                                    <img src="studentimage.jpg" class="w-16 rounded-full"/>
+                                </div>
+                                <div class="m-2">
+                                    <h3>Student Name</h3>
+                                    <img src="fivestars.png" class="w-24">
+                                </div>
+                            </div>
+                            <div class="m-4">I used to have to look around at so many different websites around
+                                stores just to figure out where to get a job. I tried using other websites but they
+                                just weren't made for high schoolers like me. I love this app and I recommend
+                                it to all my friends. 
+                            </div>
+                        </div>
+                    </div>
             </section>
         </main>
-        <footer>
+        <footer class="bg-slate-100 h-96 mt-10">
         </footer>
 	</body>
 	</html>

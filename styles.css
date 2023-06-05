@@ -556,6 +556,10 @@ video {
   }
 }
 
+.m-1 {
+  margin: 0.25rem;
+}
+
 .m-10 {
   margin: 2.5rem;
 }
@@ -643,6 +647,14 @@ video {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.w-36 {
+  width: 9rem;
 }
 
 .w-5 {
@@ -826,6 +838,16 @@ video {
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
+  }
+
+  .md\:bg-blue-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+  }
+
+  .md\:text-black {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
   }
 }
 

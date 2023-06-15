@@ -42,9 +42,16 @@
                 <div class="container bg-white m-4">
                     <div class="text-3xl">Get connected with a paid and valuable experience.</div>
                     <p class="my-6"> A platform that connects high school students with job and internship opportunities.</p>
-                    <div class="flex flex-inline">
-                        <input type="text" name="search" id="search" placeholder=" e.g. woodworking apprenticeship" size="35" class="border-2 rounded mr-2 text-xs italic"/>
-                        <a href="" class="bg-slate-200 py-2 px-4 rounded-md hover:bg-yellow-200">Discover</a>
+                    <div id="search-box" class="w-3/4">
+                        <div class="row align-middle flex">
+                            <input type="text" id="input-box" placeholder="search for a job" size="40" autocomplete="off" class="border-2 rounded p-2">
+                            <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-3">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                              </svg>
+                              </button>
+                        </div>
+                        <div id="result-box">
+                        </div>
                     </div>
                 </div>
                 <div class="m-4"><img src="landing.jpg" class="container rounded-lg"></div>
@@ -235,5 +242,6 @@
                     </div>
                 </div>
         </footer> <!--END: Footer Section-->
+    <script src="app.js"></script>
 	</body>
 	</html>

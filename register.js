@@ -51,32 +51,33 @@ formEl.addEventListener("submit", (event) => {
       password2Val,
     });
     //add condiition here because we only want to log-in the user once they have been registered
-    if (registerUser()) console.log(emailVal, password1Val);
+    if (registerUser()) loginUser(emailVal, password1Val);
   }
 });
 
 function registerUser() {
-  showMessage(`You are now registered!`);
-  showMessage(`Let's go log-in!`, closeMessage);
+  showMessage(
+    `
+      <div class="text-center items-center m-10">
+        <p>You are now registered.</p><br>
+        <p>Let's go log-in!</p><br>
+        <img src="https://usagif.com/wp-content/uploads/loading-51.gif" class="h-6 w-6 mx-auto">
+      </div>
+    `,
+    closeMessage
+  );
+  document.querySelector(`#form-textboxes`).innerHTML = "";
+  setTimeout(() => {
+    window.location = `https://hsjobs.vercel.app/`;
+  }, 2000);
 }
 
 function showMessage(msg, msgDom = openMessage) {
-  msgDom.innerHTML = `<p>${msg}</p>`;
+  msgDom.innerHTML = `<p>${msg}</p><br>`;
 }
 
 function clearMessage(msg, msgDom = openMessage) {
   msgDom.innerHTML = ``;
-}
-
-//FUNCTION -logs user in
-function loginUser(email, password) {
-  console.log(email, password);
-  showMessage(
-    `<img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif">`
-  );
-  setTimeout(() => {
-    window.location = `https://google.com`;
-  }, 2000);
 }
 
 //FUNCTION resets form
@@ -89,3 +90,14 @@ resetBtn.addEventListener("click", (event) => {
   openMessage.innerHTML = "";
   closeMessage.innerHTML = "";
 });
+
+//FUNCTION -logs user in
+function loginUser(email, password) {
+  console.log(email, password);
+  showMessage(
+    `<img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif">`
+  );
+  setTimeout(() => {
+    window.location = `https://hsjobs.vercel.app/`;
+  }, 2000);
+}

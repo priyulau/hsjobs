@@ -10,41 +10,48 @@
 <body>
     <nav class="bg-blue-500 text-white p-4"> <!--BEG: Nav bar for larger screens-->
       <div class="lg:flex justify-between m-5">
-          <div class="md:flex">
+          <div class="lg:flex">
               <div><a href="index.html" class="">LOGO</a></div>
           </div>
-          <ul class="flex">
+          <ul class="lg:flex">
               <li><a href="#" class="m-2 hover:bg-yellow-200 py-2 px-4 rounded-md">Categories</a></li>
               <li><a href="#" class="m-2 hover:bg-yellow-200 py-2 px-4 rounded-md">Companies</a></li>
               <li><a href="#" class="m-2 hover:bg-yellow-200 py-2 px-4 rounded-md">Latest Jobs</a></li>
               <li><a href="#" class="m-2 hover:bg-yellow-200 py-2 px-4 rounded-md">Post a Job</a></li>
           </ul>
-          <div class="md:flex">
+          <div class="lg:flex">
               <div><a href="register.html"  class="m-2 hover:bg-yellow-200 py-2 px-4 rounded-md">Sign Up</a></div>
               <div><a href="#"  class="m-2 hover:bg-yellow-200 py-2 px-4 rounded-md">Log In</a></div>
           </div>
       </div>
     </nav> <!--END: Nav bar for larger screens-->
-  <div class="bg-slate-100 p-10 rounded-lg lg:mx-96 lg:my-24">
-    <h1 class="text-center text-2xl">Sign up</h1><br>
-    <form id="form">
-      <div id="opening-msg"></div>
-      <label for="fname">First Name</label><br>
-      <input type="text" name="fname" id="fname"></input><br>
-      <label for="lname">Last Name</label><br>
-      <input type="text" name="lname" id="lname"></input><br>
-      <label for="email">Email Address</label><br>
-      <input type="email" name="email" id="email"></input><br>
-      <label for="password">Password</label><br>
-      <input type="password" name="password" id="password"></input><br>
-      <label for="cpassword">Confirm Password</label><br>
-      <input type="password" name="cpassword" id="cpassword"></input><br><br>
-      <div class="flex justify-between">
-        <input type="submit" id="submit-btn" class=" bg-yellow-200 p-2 rounded-md"></input>
-        <input type="reset" value="Clear Form" id="reset" class="bg-slate-200 p-2 rounded-md"></input>
-      </div>
-      <div id="closing-msg"></div>
-    </form>
+  <div class="lg:flex lg:m-24 lg:align-middle">
+    <div class="bg-slate-100 rounded-lg text-center lg:w-1/2 p-14">
+      <h1 class="text-center text-2xl">Sign up</h1>
+      <form id="form" class="m-4">
+        <div id="opening-msg" class="text-red-500"></div>
+        <div id="form-textboxes">
+          <label for="fname">First Name</label><br>
+          <input type="text" name="fname" id="fname"></input><br>
+          <label for="lname">Last Name</label><br>
+          <input type="text" name="lname" id="lname"></input><br>
+          <label for="email">Email Address</label><br>
+          <input type="email" name="email" id="email"></input><br>
+          <label for="password">Password</label><br>
+          <input type="password" name="password" id="password"></input><br>
+          <label for="cpassword">Confirm Password</label><br>
+          <input type="password" name="cpassword" id="cpassword"></input><br><br>
+          <div class="flex justify-center">
+            <input type="submit" id="submit-btn" class=" bg-yellow-200 p-2 rounded-md m-5"></input>
+            <input type="reset" value="Clear Form" id="reset" class="bg-slate-200 p-2 rounded-md m-5"></input>
+          </div>
+        </div>
+        <div id="closing-msg" class="m-2 text-green-500"></div>
+      </form>
+    </div>
+    <div class="hidden lg:flex">
+      <img src="hiringppl.png" class="">
+    </div>
   </div>
 <script src="register.js"></script>
 </body>
